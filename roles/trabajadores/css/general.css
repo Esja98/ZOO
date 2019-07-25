@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;}
+
+body{
+	font-family:'Merriweather', serif;
+	background:url("../img/bg-patt.png") repeat scroll 0 0 rgba(0, 0, 0, 0);}
+
+.cabecera{
+	top:0;
+	width: 100%;
+	color: #fff;
+	z-index: 100;
+	height: 205px;
+	margin-top: 20px;
+	border-radius:10px;
+	position: relative;
+	background-size: cover;
+	border: 2px solid #a35622;
+	background-image:url("../img/fondo.jpg");}
+	
+.cabeceramenu{
+	left: 2%;
+	width: 100%;
+	z-index: 100;
+	position: relative;}
+
+.contenedormenu{
+	width: 100%;
+	color: #fff;
+	z-index: 100;
+	height: 55px;
+	background:#a35622;}
+
+.contenedor{
+	width: 100%;
+	margin: auto;}
+
+header .contenedor{display: table;}
+
+h1{	float: left;}
+
+section{
+	width: 96%;
+	margin-bottom: 35px;}
+
+#Bienvenidos{
+	width: 96%;
+	height: 50%;
+	padding-left:30px;
+	text-align: justify;}
+
+#blog .contenedor{
+	width: 96%;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left:30px;
+	text-align: justify;
+	justify-content: center;}
+
+#blog article{margin: 20px;}
+
+#blog h3{text-align: center;}  
+
+#blog img{
+	width: 150%;
+	max-width: 320px;}
+
+#info{
+	color: #fff;
+	padding: 20;
+	margin-left: 2%;
+	text-align: center;
+	background: #4e94ab;}
+
+#info .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;}
+
+.info-animal img{
+	width:180px;
+	height:180px;
+	border-radius: 50%;
+	border: 5px solid #fff;}
+
+footer{
+	width: 100%;
+	background-color: #131313;}
+
+footer .contenedor{
+	color:#fff;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top:20px; 
+	justify-content: center;}
+
+.contenedor p{color: #fff;}
+
+.copy{
+	color: #fff;
+	font-size: 40px;}
+
+.sociales{
+	width: 96%;
+	height: 80px;
+	font-size: 28px;
+	text-align: center;}
+
+.sociales a{
+	color: #fff;
+	text-decoration: none;}
+
+.imagencabecera{
+	border: 0;
+	padding: 0;
+	width: 20%;
+	float: left;
+	display: inline-block;}
+
+.imagencabecera img{margin-left: 30px;}
+
+.titulocabecera{
+	margin:0;
+	border: 0;
+	width: 60%;
+	float: right;
+	display: inline-block;}
+
+.imagencabecera img{width: 100%;}
+
+.titulo{
+text-shadow:
+4px 4px 0px #E0E4CC,
+9px 8px 0px #F38630;
+color: #a35622;
+font-size: 100px;
+font-family: 'Lobster', cursive;}
+
+/* ------------------------------ MODIFICACION DEL MENÚ ---------------------------------*/
+
+
+#menu-bar{display: none;}
+
+.contenedormenu label{
+	float: left;
+	margin: 2px 0;
+	font-size:26px;
+	cursor: pointer;}
+
+.menu{
+	top: 40px;
+	width: 100%;
+	z-index: 100;
+	height: 100vh;
+	margin-left:0.1%;
+	transition: all 0.5s;
+	transform: translateX(-120%);
+	background: rgba(51,51,51,0.9);}
+
+.menu a{
+	color: #fff;
+	height: 55px;
+	z-index: 100;
+	display: block;
+	padding-top: 15px;
+	padding-left: 15px;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255,255,255, 0.5);}
+
+.menu a:hover{	background: rgba(255,255,255,0.3);}
+
+#menu-bar:checked ~ .menu{transform: translateX(0%);}
+
+.fixed{position:fixed; top:0}
+
+
+
+/* ------------------------------ RESPONSIVE ---------------------------------*/
+
+@media (min-width: 1024px){
+	.menu{
+		width: auto;
+		height: auto;
+		float: right;
+		display: flex;
+		position:absolute; 
+		margin-top: -40px;
+		margin-left:-215px;
+		background:#a35622;
+		transform: translateX(0%);}
+
+
+	.menu a{
+		border-bottom: 0;
+		margin-left:20px;
+		padding-left:70px;
+		margin-right: 20px;
+		padding-right: 20px;}
+
+	.menu a:hover{background: rgba(255,255,255,0.3);}
+
+	.contenedormenu label{display: none;}
+	.contenedor{width: 1000px;}
+	
+
+	.info-animal{width: auto;}
+
+	#blog .contenedor{height: 300px;}
+	#cabecera{margin-bottom: -10px;}
+}
+
+
+
+@media (min-width: 768px){
+	.sociales{width: auto;}
+	header{top:24%;margin:auto;}
+	footer .contenedor{justify-content: space-between;}
+	#blog .contenedor{height: 400px;}
+
+
+}
+
+
+
+@media (max-width: 600px){
+	.imagencabecera{
+		margin:0;
+	    padding: 0;	
+		width: 100%;
+		float: none;
+		max-width: 100%;
+		position: static;
+		text-align: center;
+		display: block !important;
+	}
+
+	.imagencabecera img{width: 30%;}
+
+	.titulocabecera{
+		margin:0;
+		padding: 0;	
+		width: 100%;
+		position:static;
+		max-width: 100%;
+		text-align: center;
+		display: block !important;
+		font-size: 20px !important;}
+
+	.titulocabecera div{font-size: 63px;}
+}
+
+
+@media(min-width: 480px){
+	.info-animal{width: 40%;}
+	.menu{position: absolute;}
+	header{	margin-top: 5.5%;}
+	#blog .contenedor{height: 700px;}
+}

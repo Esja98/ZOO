@@ -1,0 +1,53 @@
+#banner{
+	position: relative;
+}
+#banner img{
+	width: 99.8%;
+	height: 80%;
+	margin-left: 2.3%;
+	z-index: 1;
+
+}
+#banner .contenedor{
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+}
+#banner h2{
+	font-size: 28px;
+}
+@media(min-width: 480px){
+	#banner h2{
+		font-size: 30px;
+		margin-left: 15%;
+	}
+	#banner h3{
+		margin-left: 15%;
+	}
+	#banner a{
+		margin-top: 25px;
+	}
+}
+@media(min-width: 768px){
+	#banner{
+		height: 300px;
+		overflow: hidden;
+		width: 98.2%;
+		margin-left: -0.2%;
+	}
+	#banner img{
+		height: auto;
+		margin-top: -80px;
+	}
+}
+@media(min-width: 1024px){
+	
+	#banner img{
+	
+		margin-bottom: -200px;
+
+	}
+}
+

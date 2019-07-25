@@ -1,0 +1,501 @@
+/*CONFIGURAR LOS PLANES*/
+.contenedorplanes{
+  clear: both;
+  width: 1000px;
+  margin: auto auto 20px;
+
+}
+.plan1{
+	width: 32%;
+	padding: 5%;
+	border: 0;
+  margin-left:1px;
+	display: inline-block;
+	float: left;
+	background-color: #a35622;
+   border-radius: 6px;
+}
+
+.plan2{
+	width:32%;
+	padding: 5%;
+	margin-left:3px;
+	border: 0;
+	display: inline-block;
+	background-color:#8ecc51; 
+   border-radius: 6px;
+   text-align: justify;
+}
+.plan3{
+	width: 32%;
+	padding: 5%;
+	margin:0;
+	border: 0;
+	display: inline-block;
+	background-color:#999; 
+     border-radius: 6px;
+     text-align: justify;
+}
+
+
+a:link {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.25s;
+}
+
+a:visited,
+a:link:hover,
+a:visited:hover {
+  text-decoration: none;
+}
+
+
+.button a{
+	text-decoration: none;
+}
+.button {
+  list-style: none;
+  text-align: center;
+  width: 95%;
+  margin: 10px;
+  padding: 2px;
+  font-size: 14px;
+  clear: both;
+}
+
+.button ul {
+  margin: 0;
+  padding: 0
+}
+
+.button li {
+  display: inline;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+.button li a.download {
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #f38630;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+}
+
+.button li a.download {
+  background: #e57923;
+}
+
+
+.button li a.download:hover {
+  background: #f38630;
+}
+
+.guardar{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #a35622;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.guardar:hover{
+
+  background: #e57923;
+}
+.Borrar{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #a35622;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.Borrar:hover{
+
+  background: #e57923;
+}
+.guardar1{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #74b139;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.guardar1:hover{
+
+  background: #e57923;
+}
+.Borrar1{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #74b139;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.Borrar1:hover{
+
+  background: #e57923;
+}
+
+.contenedorplanes{
+  clear: both;
+  width: 70%;
+  margin: auto auto 20px;
+
+}
+.plan1datos{
+  width: 100%;
+  padding: 5%;
+  border: 0;
+  margin-top:20px; 
+  display: inline-block;
+  background-color: #a35622;
+   border-radius: 6px;
+}
+.plan2datos{
+  width: 100%;
+  padding: 5%;
+  border: 0;
+  margin-top:20px; 
+  display: inline-block;
+  background-color: #74b139;
+   border-radius: 6px;
+}
+.plan3datos{
+  width: 100%;
+  padding: 5%;
+  border: 0;
+  margin-top:20px; 
+  display: inline-block;
+  background-color: #999;
+   border-radius: 6px;
+}
+
+.letraformulario{
+      font-family: sans-serif;
+      margin-bottom: 10px;   
+      font-weight: bold;
+      font-size: 18px;
+}
+
+/*----------------------FORMATO BOOSTRAP------------------------*/
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+/*-------------------------------------MODIFICAR INICIO USUARIO-----------------------------*/
+.contenedorusuario{
+  clear: both;
+  margin: auto auto 25px;
+  width: 60%;
+
+}
+.contenedorcompras{
+  clear: both;
+  margin: auto auto 25px;
+  width: 80%;
+
+}
+.iconocompras h1{
+  text-align: center;
+  padding-left: 25%;
+}
+.iconocompras{
+  width:100%;
+  padding: 5%;
+  border: 0;
+  background-color:#8ecc51; 
+  border-radius:6px 6px 0 0;
+  text-align: justify;
+
+}
+.iconocompras img{
+  width: 30%;
+  padding: 2%;
+  align-content: center;
+}
+.usuarioicono{
+  width:100%;
+  padding: 5%;
+  border: 0;
+  background-color:#8ecc51; 
+  border-radius:6px 6px 0 0;
+  text-align: justify;
+
+}
+.usuarioicono h1{
+  text-align: center;
+  padding-left: 25%;
+}
+
+.usuarioicono img{
+  width: 50%;
+  padding: 2%;
+  align-content: center;
+}
+.usuariobotones{
+  width: 100%;
+  padding: 5%;
+  margin:0;
+  border: 0;
+  
+  display: inline-block;
+  background-color:#8ecc51; 
+  border-radius:0 0 6px 6px;
+  
+}
+.usuariobotones h3{
+  text-align: justify;
+  padding:0 15% 0 15%;
+}
+
+.boton{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #a35622;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.boton:hover{
+
+  background: #e57923;
+}
+
+/*------------------------MODIFICAR CREAR_USUARIO--------------------------*/
+.crear_usuario{
+  clear: both;
+  width: 50%;
+  margin: auto auto 20px;
+
+}
+.crear{
+  width: 100%;
+  padding: 5%;
+  border: 0;
+  margin-top:20px; 
+  display: inline-block;
+  background-color: #999;
+   border-radius: 6px;
+}
+
+.letraform{
+      font-family: sans-serif;
+      margin-bottom: 20px;
+}
+
+/*---------------------TABLA RESPONSIVE------------------*/
+
+    table, thead, tbody, th, td, tr {
+      padding: 1%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+th {
+  background-color: #f2f2f2;
+
+}    
+tr:nth-child(even){background-color: #DFCA46}
+
+@media
+    only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #DFCA46;
+    }
+    
+    td {
+      
+      border: none;
+      border: 1px solid #000;
+      position: relative;
+      padding-left: 50%;
+    }
+
+    td:before {
+      
+      position: absolute;
+      top: 0;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+
+   
+    td:nth-of-type(1):before { content: "Nombre"; }  
+    td:nth-of-type(2):before { content: "Cantidad de productos"; }
+    td:nth-of-type(3):before { content: "Cantidad de niños"; }
+    td:nth-of-type(4):before { content: "Plan"; }
+    td:nth-of-type(5):before { content: "Adicionales"; }
+    td:nth-of-type(6):before { content: "Metodo de pago"; }
+    td:nth-of-type(7):before { content: "Admpc_c"; }
+    td:nth-of-type(8):before { content: "Comprador"; }
+    td:nth-of-type(9):before { content: "Total"; }
+    
+  }
+
+/*---------------------------MODIFICAR ANIMALES---------------------*/
+
+.contenedoranimales{
+  clear: both;
+  width: 80%;
+  margin: 20px auto 20px;
+  padding: 20px;
+ border: 1px #000 solid;
+  
+}
+.alinaImag{
+  width: 40%;
+  padding: 5px;
+  border: 0;
+  margin: 0;
+  display: inline-block;
+  float: left;
+ 
+}
+.alinaImag img{
+width: 80%;
+padding: 10%;
+
+  }
+
+.alinaTexto{
+  width:60%;
+  padding: 5%;
+  margin:0;
+  border: 0;
+  height: 100%;
+  float: right;
+  margin-top: 10px;
+
+  display: inline-block;
+  
+}
+
+@media (max-width: 780px){
+  .contenedorplanes{
+    width: 100%;
+    
+  }
+  .contenedorusuario{width: 100%;}
+
+
+  .usuarioicono h1{
+    padding-left: 5%;
+    text-align: center;
+  }
+}
+
+
+
+@media (max-width: 600px){
+  .plan1, .plan2, .plan3{
+    margin:10px 0;
+    padding: 10px; 
+    width: 100%;
+    float: none;
+    max-width: 100%;
+    position: static;
+    text-align: center;
+    display: block !important;
+  }
+  .contenedorplanes{
+    width: 100%;
+    
+  }
+  .alinaImag, .alinaTexto{
+    margin:10px 0;
+    padding: 10px; 
+    width: 100%;
+    float: none;
+    max-width: 100%;
+    position: static;
+    text-align: center;
+    display: block !important;
+  }
+

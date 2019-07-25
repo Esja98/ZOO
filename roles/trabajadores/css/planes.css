@@ -1,0 +1,318 @@
+/*CONFIGURAR LOS PLANES*/
+.contenedorplanes{
+  clear: both;
+  width: 1000px;
+  margin: auto auto 20px;
+
+}
+.plan1{
+	width: 32%;
+	padding: 5%;
+	border: 0;
+  margin-left:1px;
+	display: inline-block;
+	float: left;
+	background-color: #a35622;
+   border-radius: 6px;
+}
+
+.plan2{
+	width:32%;
+	padding: 5%;
+	margin-left:3px;
+	border: 0;
+	display: inline-block;
+	background-color:#8ecc51; 
+   border-radius: 6px;
+   text-align: justify;
+}
+.plan3{
+	width: 32%;
+	padding: 5%;
+	margin:0;
+	border: 0;
+	display: inline-block;
+	background-color:#999; 
+     border-radius: 6px;
+     text-align: justify;
+}
+
+
+a:link {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.25s;
+}
+
+a:visited,
+a:link:hover,
+a:visited:hover {
+  text-decoration: none;
+}
+
+
+.button a{
+	text-decoration: none;
+}
+.button {
+  list-style: none;
+  text-align: center;
+  width: 95%;
+  margin: 10px;
+  padding: 2px;
+  font-size: 14px;
+  clear: both;
+}
+
+.button ul {
+  margin: 0;
+  padding: 0
+}
+
+.button li {
+  display: inline;
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+.button li a.download {
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #f38630;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+}
+
+.button li a.download {
+  background: #e57923;
+}
+
+
+.button li a.download:hover {
+  background: #f38630;
+}
+
+.guardar{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #a35622;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.guardar:hover{
+
+  background: #e57923;
+}
+.Borrar{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #a35622;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.Borrar:hover{
+
+  background: #e57923;
+}
+.guardar1{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #74b139;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.guardar1:hover{
+
+  background: #e57923;
+}
+.Borrar1{
+  position: relative;
+  padding: 9px 16px 9px 16px;
+  background: #74b139;
+  color: #fff!important;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  line-height: normal;
+  transition: all .3s;
+
+}
+.Borrar1:hover{
+
+  background: #e57923;
+}
+
+.contenedorplanes{
+  clear: both;
+  width: 70%;
+  margin: auto auto 20px;
+
+}
+.plan1datos{
+  width: 100%;
+  padding: 5%;
+  border: 0;
+  margin-top:20px; 
+  display: inline-block;
+  background-color: #a35622;
+   border-radius: 6px;
+}
+.plan2datos{
+  width: 100%;
+  padding: 5%;
+  border: 0;
+  margin-top:20px; 
+  display: inline-block;
+  background-color: #74b139;
+   border-radius: 6px;
+}
+.plan3datos{
+  width: 100%;
+  padding: 5%;
+  border: 0;
+  margin-top:20px; 
+  display: inline-block;
+  background-color: #999;
+   border-radius: 6px;
+}
+
+.letraformulario{
+      font-family: sans-serif;
+      margin-bottom: 10px;   
+      font-weight: bold;
+      font-size: 18px;
+}
+
+/*----------------------FORMATO BOOSTRAP------------------------*/
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/*---------------------------MODIFICAR ANIMALES---------------------*/
+
+.contenedoranimales{
+  clear: both;
+  width: 80%;
+  margin: 20px auto 20px;
+  padding: 20px;
+ border: 1px #000 solid;
+  
+}
+.alinaImag{
+  width: 40%;
+  padding: 5px;
+  border: 0;
+  margin: 0;
+  display: inline-block;
+  float: left;
+ 
+}
+.alinaImag img{
+width: 80%;
+padding: 10%;
+
+  }
+
+.alinaTexto{
+  width:60%;
+  padding: 5%;
+  margin:0;
+  border: 0;
+  height: 100%;
+  float: right;
+  margin-top: 10px;
+
+  display: inline-block;
+  
+}
+
+@media (max-width: 780px){
+  .contenedorplanes{
+    width: 100%;
+    
+  }
+}
+
+
+@media (max-width: 600px){
+  .plan1, .plan2, .plan3{
+    margin:10px 0;
+    padding: 10px; 
+    width: 100%;
+    float: none;
+    max-width: 100%;
+    position: static;
+    text-align: center;
+    display: block !important;
+  }
+  .contenedorplanes{
+    width: 100%;
+    
+  }
+  .alinaImag, .alinaTexto{
+    margin:10px 0;
+    padding: 10px; 
+    width: 100%;
+    float: none;
+    max-width: 100%;
+    position: static;
+    text-align: center;
+    display: block !important;
+  }
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zoologioco</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../css/fontello.css">
+  <link rel="stylesheet" type="text/css" href="../../css/general.css">
+  <link rel="stylesheet" type="text/css" href="../../css/banner.css">
+  <link rel="stylesheet" type="text/css" href="../../css/planes.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../../js/script.js"></script>
+</head>
+  
+  <body>
+    
+    <main>
+      <div class="crear_usuario">
+          <div class="crear">
+
+      <form action="acciones/registrar-usuario.php" method="POST">
+
+            <div class="form-group">
+            <label for="nombre"><center><h2>Registrar Usuario</h2></center></label>
+            </p>
+            <br>
+              <label class="letraform" for="Nombre">Nombre:</label>
+              <br/><br/>
+              <input class="form-control" name="username" type="text" placeholder="Nombre">
+              <br/><br/>
+              </div>
+              <label class="letraform" for="Email">Email:</label>
+              <br/><br/>
+              <input class="form-control" name="correo" type="text" placeholder="Email">
+              <br/><br/>
+
+              <label class="letraform" for="Contraseña">Contraseña:</label>
+              <br/><br/>
+              <input class="form-control" name="password" type="text" placeholder="Contraseña">
+              <br/><br/>
+
+              <label for="option">Metodo de pago:</label>
+              <br/><br/>
+              <select class="form-control" name="metodo_p" id="option">
+                <option value="mastercard">Mastercard</option>
+                <option value="paypal">Paypal</option>
+              
+              </select> 
+              <br/><br/>
+              <label  class="letraform" for="numero_pago">Adicional pago</label>
+              <br/><br/>
+              <input class="form-control"  name="numero_pago" type="text" placeholder="Adicional pago">
+              <br/><br/>
+
+              <p>
+              <br/><br/>
+              <center>
+              <input type="submit" value="Guardar" class="guardar">
+              <input type="reset" value="Borrar" class="Borrar">
+              </center>
+              </p>
+        
+      </form>
+      </div>
+      </div>
+    </main>
+
+
+
+  
+      
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<style type="text/css">
+	
+table{
+	width:100%;
+	max-width:100%;
+	font-family:'Roboto',sans-serif;
+  border-collapse: collapse;
+}
+
+table  td{
+	border:0;
+	color:#000;
+	padding: 10px 0;
+	font-weight:400;
+	background:#fff;
+	line-height:17px;
+	overflow:hidden;
+	text-align:center;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+table img{
+	height:auto;
+	max-width:100%;
+}
+
+table th{
+	background-color: #f9f9f9;
+	border:1px solid rgba(0,0,0,0.05);
+	width: 30% ;
+}
+table th .stilo2{
+	width: 100% !important;
+	position: absolute;
+}
+table a{
+	padding: 10px 0;
+	text-align:center;
+	text-decoration: none;
+}
+
+
+</style>
+
+<?php
+include("acciones/conexion.php");
+$query="select *from vehiculos";
+$resultado=$conexion->query($query);
+
+
+while($row=$resultado->fetch_assoc()){
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zoologioco</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="../../css/general.css">
+	<link rel="stylesheet" type="text/css" href="../../css/banner.css">
+	<link rel="stylesheet" type="text/css" href="../../css/planes.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../../js/script.js"></script>
+</head>
+	
+	<body>
+	
+
+
+		<main  >
+			
+
+			<div style="clear: both;"></div>
+			
+			<div class="contenedorusuario">
+
+					<div class="usuarioicono">
+
+					<article>
+						 <center><h1>Mostrar los datos de la cita</h1></center>
+						</br></br></br> 
+						 </article>
+						<form>
+
+<table>
+    <tbody>
+        <tr>
+            <th>Nombre del Animal:</th>
+            <td><?php echo $row['nombre_a']; ?></td>
+        </tr>
+        <tr>
+            <th>Id del trabajador:</th>
+            <td><?php echo $row['id_t']; ?></td>
+        </tr>
+        <tr>
+            <th>Fecha:</th>
+            <td><?php echo $row['fecha']; ?></td>
+        </tr>
+        <tr>
+            <th>Hora:</th>
+            <td><?php echo $row['hora']; ?></td>
+        </tr>
+        <tr>
+            <th>Emergencia:</th>
+            <td><?php echo $row['emergencia']; ?></td>
+        </tr>
+        <tr>
+            <th>Reporte:</th>
+            <td><?php echo $row['reporte']; ?></td>
+        </tr>
+        <tr>
+            <th>Estado:</th>
+            <td><?php echo $row['estado']; ?></td>
+        </tr>
+
+    </tbody>
+</table>
+<table>
+    <tbody>
+        <tr>
+            <th class="stilo2"> <?php echo "<a href='modificar.php?id_animal=$row[id_animal]' target='_blank'>modificar</a> - <a href='acciones/eliminar.php?id_animal=$row[id_animal]' target='_blank'>eliminar</a> <br/><br/>"; ?></th>
+        </tr>
+    </tbody>
+</table>
+<br/>
+
+</div>
+				
+
+			</div>
+			
+		</main>
+			
+	</body>
+</html>
+<?php
+}
+?>
